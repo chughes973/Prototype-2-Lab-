@@ -475,6 +475,12 @@
             "icon": "package/com.unity.modules.jsonserialize"
           },
           {
+            "name": "Required by Physics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.physics"
+          },
+          {
             "name": "Required by RuntimeInitializeOnLoadManagerInitializer Module",
             "scenes": [],
             "dependencyType": 2,
@@ -500,6 +506,39 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.runtimeinitializeonloadmanagerinitializer"
+          }
+        ]
+      },
+      {
+        "name": "Physics",
+        "dependencies": [
+          {
+            "name": "BoxCollider",
+            "scenes": [
+              "Assets/Scenes/Prototype 2.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Collider",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "PhysicsManager",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "Rigidbody",
+            "scenes": [
+              "Assets/Scenes/Prototype 2.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
           }
         ]
       },
@@ -546,6 +585,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.jsonserialize"
+          },
+          {
+            "name": "Required by Physics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.physics"
           },
           {
             "name": "Required by RuntimeInitializeOnLoadManagerInitializer Module",

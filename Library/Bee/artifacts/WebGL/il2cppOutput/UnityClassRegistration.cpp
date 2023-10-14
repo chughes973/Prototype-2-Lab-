@@ -18,6 +18,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_JSONSerialize();
 	RegisterModule_JSONSerialize();
 
+	void RegisterModule_Physics();
+	RegisterModule_Physics();
+
 	void RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
 	RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
 
@@ -98,12 +101,16 @@ class Texture2DArray; template <> void RegisterUnityClass<Texture2DArray>(const 
 class Texture3D; template <> void RegisterUnityClass<Texture3D>(const char*);
 class TimeManager; template <> void RegisterUnityClass<TimeManager>(const char*);
 class Transform; template <> void RegisterUnityClass<Transform>(const char*);
+class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
+class Collider; template <> void RegisterUnityClass<Collider>(const char*);
+class PhysicsManager; template <> void RegisterUnityClass<PhysicsManager>(const char*);
+class Rigidbody; template <> void RegisterUnityClass<Rigidbody>(const char*);
 
 void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 64 non stripped classes
+	//Total: 68 non stripped classes
 	//0. AnimationClip
 	RegisterUnityClass<AnimationClip>("Animation");
 	//1. Animator
@@ -232,5 +239,13 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<TimeManager>("Core");
 	//63. Transform
 	RegisterUnityClass<Transform>("Core");
+	//64. BoxCollider
+	RegisterUnityClass<BoxCollider>("Physics");
+	//65. Collider
+	RegisterUnityClass<Collider>("Physics");
+	//66. PhysicsManager
+	RegisterUnityClass<PhysicsManager>("Physics");
+	//67. Rigidbody
+	RegisterUnityClass<Rigidbody>("Physics");
 
 }

@@ -122,6 +122,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Component
 
+		//UnityEngine.GameObject UnityEngine.Component::get_gameObject()
+		void Register_UnityEngine_Component_get_gameObject();
+		Register_UnityEngine_Component_get_gameObject();
+
 		//UnityEngine.Transform UnityEngine.Component::get_transform()
 		void Register_UnityEngine_Component_get_transform();
 		Register_UnityEngine_Component_get_transform();
@@ -135,6 +139,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_ComputeShader_FindKernel();
 
 	//End Registrations for type : UnityEngine.ComputeShader
+
+	//Start Registrations for type : UnityEngine.ContactPair
+
+		//System.Int32 UnityEngine.ContactPair::ExtractContactsArray_Injected(UnityEngine.ContactPair&,UnityEngine.ContactPoint[],System.Boolean)
+		void Register_UnityEngine_ContactPair_ExtractContactsArray_Injected();
+		Register_UnityEngine_ContactPair_ExtractContactsArray_Injected();
+
+	//End Registrations for type : UnityEngine.ContactPair
 
 	//Start Registrations for type : UnityEngine.Coroutine
 
@@ -250,6 +262,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.GameObject
 
+		//System.Boolean UnityEngine.GameObject::CompareTag(System.String)
+		void Register_UnityEngine_GameObject_CompareTag();
+		Register_UnityEngine_GameObject_CompareTag();
+
 		//System.Void UnityEngine.GameObject::Internal_CreateGameObject(UnityEngine.GameObject,System.String)
 		void Register_UnityEngine_GameObject_Internal_CreateGameObject();
 		Register_UnityEngine_GameObject_Internal_CreateGameObject();
@@ -257,6 +273,18 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.GameObject::SendMessage(System.String,System.Object,UnityEngine.SendMessageOptions)
 		void Register_UnityEngine_GameObject_SendMessage();
 		Register_UnityEngine_GameObject_SendMessage();
+
+		//UnityEngine.Component UnityEngine.GameObject::GetComponent(System.Type)
+		void Register_UnityEngine_GameObject_GetComponent();
+		Register_UnityEngine_GameObject_GetComponent();
+
+		//UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
+		void Register_UnityEngine_GameObject_Find();
+		Register_UnityEngine_GameObject_Find();
+
+		//UnityEngine.Transform UnityEngine.GameObject::get_transform()
+		void Register_UnityEngine_GameObject_get_transform();
+		Register_UnityEngine_GameObject_get_transform();
 
 	//End Registrations for type : UnityEngine.GameObject
 
@@ -289,6 +317,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Boolean UnityEngine.Input::CheckDisabled()
 		void Register_UnityEngine_Input_CheckDisabled();
 		Register_UnityEngine_Input_CheckDisabled();
+
+		//System.Boolean UnityEngine.Input::GetKeyDownInt(UnityEngine.KeyCode)
+		void Register_UnityEngine_Input_GetKeyDownInt();
+		Register_UnityEngine_Input_GetKeyDownInt();
 
 		//System.Boolean UnityEngine.Input::GetMouseButton(System.Int32)
 		void Register_UnityEngine_Input_GetMouseButton();
@@ -514,11 +546,75 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Object_ToString();
 		Register_UnityEngine_Object_ToString();
 
+		//System.Void UnityEngine.Object::Destroy(UnityEngine.Object,System.Single)
+		void Register_UnityEngine_Object_Destroy();
+		Register_UnityEngine_Object_Destroy();
+
 		//System.Void UnityEngine.Object::set_hideFlags(UnityEngine.HideFlags)
 		void Register_UnityEngine_Object_set_hideFlags();
 		Register_UnityEngine_Object_set_hideFlags();
 
+		//UnityEngine.Object UnityEngine.Object::Internal_InstantiateSingle_Injected(UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+		void Register_UnityEngine_Object_Internal_InstantiateSingle_Injected();
+		Register_UnityEngine_Object_Internal_InstantiateSingle_Injected();
+
 	//End Registrations for type : UnityEngine.Object
+
+	//Start Registrations for type : UnityEngine.Physics
+
+		//System.Boolean UnityEngine.Physics::get_invokeCollisionCallbacks()
+		void Register_UnityEngine_Physics_get_invokeCollisionCallbacks();
+		Register_UnityEngine_Physics_get_invokeCollisionCallbacks();
+
+		//System.Boolean UnityEngine.Physics::get_reuseCollisionCallbacks()
+		void Register_UnityEngine_Physics_get_reuseCollisionCallbacks();
+		Register_UnityEngine_Physics_get_reuseCollisionCallbacks();
+
+		//System.Void UnityEngine.Physics::SendOnCollisionEnter(UnityEngine.Component,UnityEngine.Collision)
+		void Register_UnityEngine_Physics_SendOnCollisionEnter();
+		Register_UnityEngine_Physics_SendOnCollisionEnter();
+
+		//System.Void UnityEngine.Physics::SendOnCollisionExit(UnityEngine.Component,UnityEngine.Collision)
+		void Register_UnityEngine_Physics_SendOnCollisionExit();
+		Register_UnityEngine_Physics_SendOnCollisionExit();
+
+		//System.Void UnityEngine.Physics::SendOnCollisionStay(UnityEngine.Component,UnityEngine.Collision)
+		void Register_UnityEngine_Physics_SendOnCollisionStay();
+		Register_UnityEngine_Physics_SendOnCollisionStay();
+
+		//System.Void UnityEngine.Physics::get_defaultPhysicsScene_Injected(UnityEngine.PhysicsScene&)
+		void Register_UnityEngine_Physics_get_defaultPhysicsScene_Injected();
+		Register_UnityEngine_Physics_get_defaultPhysicsScene_Injected();
+
+		//UnityEngine.Collider UnityEngine.Physics::GetColliderByInstanceID(System.Int32)
+		void Register_UnityEngine_Physics_GetColliderByInstanceID();
+		Register_UnityEngine_Physics_GetColliderByInstanceID();
+
+		//UnityEngine.Component UnityEngine.Physics::GetBodyByInstanceID(System.Int32)
+		void Register_UnityEngine_Physics_GetBodyByInstanceID();
+		Register_UnityEngine_Physics_GetBodyByInstanceID();
+
+		//UnityEngine.RaycastHit[] UnityEngine.Physics::Internal_RaycastAll_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+		void Register_UnityEngine_Physics_Internal_RaycastAll_Injected();
+		Register_UnityEngine_Physics_Internal_RaycastAll_Injected();
+
+	//End Registrations for type : UnityEngine.Physics
+
+	//Start Registrations for type : UnityEngine.PhysicsScene
+
+		//System.Boolean UnityEngine.PhysicsScene::Internal_RaycastTest_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+		void Register_UnityEngine_PhysicsScene_Internal_RaycastTest_Injected();
+		Register_UnityEngine_PhysicsScene_Internal_RaycastTest_Injected();
+
+		//System.Boolean UnityEngine.PhysicsScene::Internal_Raycast_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,System.Single,UnityEngine.RaycastHit&,System.Int32,UnityEngine.QueryTriggerInteraction)
+		void Register_UnityEngine_PhysicsScene_Internal_Raycast_Injected();
+		Register_UnityEngine_PhysicsScene_Internal_Raycast_Injected();
+
+		//System.Int32 UnityEngine.PhysicsScene::Internal_RaycastNonAlloc_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+		void Register_UnityEngine_PhysicsScene_Internal_RaycastNonAlloc_Injected();
+		Register_UnityEngine_PhysicsScene_Internal_RaycastNonAlloc_Injected();
+
+	//End Registrations for type : UnityEngine.PhysicsScene
 
 	//Start Registrations for type : UnityEngine.Playables.PlayableHandle
 
@@ -575,6 +671,26 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_QualitySettings_get_activeColorSpace();
 
 	//End Registrations for type : UnityEngine.QualitySettings
+
+	//Start Registrations for type : UnityEngine.Quaternion
+
+		//System.Void UnityEngine.Quaternion::Internal_FromEulerRad_Injected(UnityEngine.Vector3&,UnityEngine.Quaternion&)
+		void Register_UnityEngine_Quaternion_Internal_FromEulerRad_Injected();
+		Register_UnityEngine_Quaternion_Internal_FromEulerRad_Injected();
+
+	//End Registrations for type : UnityEngine.Quaternion
+
+	//Start Registrations for type : UnityEngine.Random
+
+		//System.Int32 UnityEngine.Random::RandomRangeInt(System.Int32,System.Int32)
+		void Register_UnityEngine_Random_RandomRangeInt();
+		Register_UnityEngine_Random_RandomRangeInt();
+
+		//System.Single UnityEngine.Random::Range(System.Single,System.Single)
+		void Register_UnityEngine_Random_Range();
+		Register_UnityEngine_Random_Range();
+
+	//End Registrations for type : UnityEngine.Random
 
 	//Start Registrations for type : UnityEngine.Rendering.GraphicsSettings
 
