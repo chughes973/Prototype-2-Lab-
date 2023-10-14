@@ -2,24 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class detectCollisions : MonoBehaviour
+public class DetectCollisions : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    private GameManager gameManager;
+
     void Start()
     {
-
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
-
-    private void OnTriggerEnter(Collider other) //called different function
+    private void OnTriggerEnter(Collider other)
     {
-        //destroy both game objects upon collision with each other
-        Destroy(gameObject);
-        Destroy(other.gameObject);
+        if (!other.CompareTag("Player"))
+        {
+            gameManager.AddLives(-1);
+            Destroy(gameObject);
+        }
+        else if (other.CompareTag("Animal"))
+        {
+            gameManager.AddScore(5);
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+        }
     }
 }
