@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 110
+  controlID: 25
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -392,7 +392,8 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -409,7 +410,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 6a590000
     m_LastClickedID: 22890
-    m_ExpandedIDs: 00000000c65c0000c85c0000
+    m_ExpandedIDs: 00000000c25c0000c45c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -437,7 +438,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000c65c0000c85c0000
+    m_ExpandedIDs: ffffffff00000000c25c0000c45c00004a5f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -921,9 +922,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.9917028, y: -0.43032074, z: 5.259285}
+    m_Target: {x: 0.031444427, y: 27.463846, z: 17.225946}
     speed: 2
-    m_Value: {x: 1.9917028, y: -0.43032074, z: 5.259285}
+    m_Value: {x: 0.031444427, y: 27.463846, z: 17.225946}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -969,13 +970,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.034996856, y: -0.9345288, z: 0.3409276, w: 0.09592925}
+    m_Target: {x: 0.15465619, y: 0.6001166, z: -0.119657956, w: 0.77564806}
     speed: 2
-    m_Value: {x: -0.034996808, y: 0.9345275, z: -0.34092712, w: -0.09592913}
+    m_Value: {x: 0.1546557, y: 0.6001147, z: -0.11965757, w: 0.77564555}
   m_Size:
-    m_Target: 29.703608
+    m_Target: 43.696663
     speed: 2
-    m_Value: 29.703608
+    m_Value: 43.696663
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1039,21 +1040,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 30fbffff
+      m_ExpandedIDs: 30fbffff96590000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Main Camera
+        m_OriginalName: Main Camera
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 22922
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 4
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 11}
       m_SearchString: 
