@@ -549,6 +549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 748365647}
   - component: {fileID: 748365646}
+  - component: {fileID: 748365648}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Respawn
@@ -591,6 +592,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &748365648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748365645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c0e1f24e2ce4a5b9bf1f3a7499cd45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectToPool: {fileID: 4171597753498577475, guid: 28f8b48b5353be2459ef0eb925734dee, type: 3}
+  amountToPool: 20
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +641,44 @@ Transform:
   - {fileID: 425805627}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1126962073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 7169122e91e1981469b2b6045ddf7963, type: 3}
+  m_PrefabInstance: {fileID: 1994536124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1126962074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126962073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e917c52987daa41af6a0305d9813c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 4171597753498577475, guid: 28f8b48b5353be2459ef0eb925734dee, type: 3}
+--- !u!114 &1126962080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126962073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df16d4e2537caad41b7265b7fb20f9bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 8039439656958064564, guid: 4b0fac0872638a3469b7fb7046470e50, type: 3}
+  - {fileID: 1553961455194009841, guid: fd20a7c8723316e408df9648b016d411, type: 3}
+  - {fileID: 42254805118843616, guid: 86bdaa7753b5a3247bded0c3d849e8c5, type: 3}
+  spawnRangeX: 10
+  spawnZLimitMax: 15
+  spawnZLimitMin: 5
+  spawnZPos: 25
 --- !u!1 &1174560711
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,10 +858,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3319650169468502408, guid: 7169122e91e1981469b2b6045ddf7963, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 7169122e91e1981469b2b6045ddf7963, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1126962074}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 7169122e91e1981469b2b6045ddf7963, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1126962080}
   m_SourcePrefab: {fileID: 100100000, guid: 7169122e91e1981469b2b6045ddf7963, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
