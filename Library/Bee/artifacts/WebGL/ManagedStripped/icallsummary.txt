@@ -43,11 +43,10 @@ UnityEngine.Experimental.Rendering.GraphicsFormatUtility::GetDepthStencilFormatF
 UnityEngine.Experimental.Rendering.GraphicsFormatUtility::GetGraphicsFormat_Native_RenderTextureFormat
 UnityEngine.Experimental.Rendering.GraphicsFormatUtility::GetGraphicsFormat_Native_TextureFormat
 UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemSettings::ScriptingDirtyReflectionSystemInstance
-UnityEngine.GameObject::CompareTag
+UnityEngine.GameObject::get_activeInHierarchy
 UnityEngine.GameObject::Internal_CreateGameObject
 UnityEngine.GameObject::SendMessage
-UnityEngine.GameObject::GetComponent
-UnityEngine.GameObject::Find
+UnityEngine.GameObject::SetActive
 UnityEngine.GameObject::get_transform
 UnityEngine.Gradient::Internal_Equals
 UnityEngine.Gradient::Init
@@ -106,6 +105,7 @@ UnityEngine.Object::GetOffsetOfInstanceIDInCPlusPlusObject
 UnityEngine.Object::ToString
 UnityEngine.Object::Destroy
 UnityEngine.Object::set_hideFlags
+UnityEngine.Object::Internal_CloneSingle
 UnityEngine.Object::Internal_InstantiateSingle_Injected
 UnityEngine.Physics::get_invokeCollisionCallbacks
 UnityEngine.Physics::get_reuseCollisionCallbacks
@@ -158,6 +158,7 @@ UnityEngine.Texture2DArray::Internal_CreateImpl
 UnityEngine.Texture3D::Internal_CreateImpl
 UnityEngine.Time::get_deltaTime
 UnityEngine.Transform::get_childCount
+UnityEngine.Transform::SetParent
 UnityEngine.Transform::TransformDirection_Injected
 UnityEngine.Transform::get_position_Injected
 UnityEngine.Transform::get_rotation_Injected

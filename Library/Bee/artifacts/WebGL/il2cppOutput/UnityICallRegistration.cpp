@@ -262,9 +262,9 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.GameObject
 
-		//System.Boolean UnityEngine.GameObject::CompareTag(System.String)
-		void Register_UnityEngine_GameObject_CompareTag();
-		Register_UnityEngine_GameObject_CompareTag();
+		//System.Boolean UnityEngine.GameObject::get_activeInHierarchy()
+		void Register_UnityEngine_GameObject_get_activeInHierarchy();
+		Register_UnityEngine_GameObject_get_activeInHierarchy();
 
 		//System.Void UnityEngine.GameObject::Internal_CreateGameObject(UnityEngine.GameObject,System.String)
 		void Register_UnityEngine_GameObject_Internal_CreateGameObject();
@@ -274,13 +274,9 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_SendMessage();
 		Register_UnityEngine_GameObject_SendMessage();
 
-		//UnityEngine.Component UnityEngine.GameObject::GetComponent(System.Type)
-		void Register_UnityEngine_GameObject_GetComponent();
-		Register_UnityEngine_GameObject_GetComponent();
-
-		//UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
-		void Register_UnityEngine_GameObject_Find();
-		Register_UnityEngine_GameObject_Find();
+		//System.Void UnityEngine.GameObject::SetActive(System.Boolean)
+		void Register_UnityEngine_GameObject_SetActive();
+		Register_UnityEngine_GameObject_SetActive();
 
 		//UnityEngine.Transform UnityEngine.GameObject::get_transform()
 		void Register_UnityEngine_GameObject_get_transform();
@@ -553,6 +549,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Object::set_hideFlags(UnityEngine.HideFlags)
 		void Register_UnityEngine_Object_set_hideFlags();
 		Register_UnityEngine_Object_set_hideFlags();
+
+		//UnityEngine.Object UnityEngine.Object::Internal_CloneSingle(UnityEngine.Object)
+		void Register_UnityEngine_Object_Internal_CloneSingle();
+		Register_UnityEngine_Object_Internal_CloneSingle();
 
 		//UnityEngine.Object UnityEngine.Object::Internal_InstantiateSingle_Injected(UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
 		void Register_UnityEngine_Object_Internal_InstantiateSingle_Injected();
@@ -837,6 +837,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Int32 UnityEngine.Transform::get_childCount()
 		void Register_UnityEngine_Transform_get_childCount();
 		Register_UnityEngine_Transform_get_childCount();
+
+		//System.Void UnityEngine.Transform::SetParent(UnityEngine.Transform,System.Boolean)
+		void Register_UnityEngine_Transform_SetParent();
+		Register_UnityEngine_Transform_SetParent();
 
 		//System.Void UnityEngine.Transform::TransformDirection_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_TransformDirection_Injected();
